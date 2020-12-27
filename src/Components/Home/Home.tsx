@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 
-export const Home: React.FC<any> = ({ pageTransition, pageVariants }) => {
+export const Home: React.FC<any> = () => {
   return (
     <div id='Home'>
       <h1>Welcome Home</h1>

@@ -32,7 +32,7 @@ const menuItems: Array<listItem> = [
   },
 ];
 
-export const Navbar = () => {
+export const Navbar: React.FC<any> = () => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
   const [mobileMenu, setMobileMenu] = useState(false);
