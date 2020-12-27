@@ -1,0 +1,27 @@
+#NotFoundContainer {
+  display: flex;
+  height: calc(100vh - 65px);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+#NotFoundContainer h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+@media only screen and (min-width: 615px) {
+  #NotFoundContainer h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 410px) {
+  #NotFoundContainer h1 {
+    font-size: 3rem;
+  }
+}
