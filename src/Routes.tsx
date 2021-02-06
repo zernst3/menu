@@ -1,5 +1,5 @@
 import React from "react";
-import { NotFound, Home, Navbar } from "./Components";
+import { NotFound, Home, Navbar, AdminDashboard } from "./Components";
 import {
   Route,
   BrowserRouter as Router,
@@ -10,11 +10,16 @@ import {
 const Routes: React.FC<any> = () => {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
-        <Route exact path='/' render={(props: any) => <Home />} />
-        <Route path='/404' render={(props: any) => <NotFound />} />
-        <Redirect to='/404' />
+        <Route exact path="/" render={(props: any) => <Home />} />
+        <Route
+          exact
+          path="/dashboard"
+          render={(props: any) => <AdminDashboard />}
+        />
+        <Route path="/404" render={(props: any) => <NotFound />} />
+        <Redirect to="/404" />
       </Switch>
     </Router>
   );

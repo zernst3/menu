@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "menuclient9ea3d4c9": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
